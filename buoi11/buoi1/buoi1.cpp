@@ -1,32 +1,32 @@
-#include<iostream>
-#include<vector>
-using namespace std; 
-struct sinhvien {
-	string hoten;
-	int tuoi;
-	bool gioitinh;
-	string diachi;
-};
-int main() {  
-	sinhvien b;
-	b.hoten = "nguyen van A";
-	b.tuoi = 19;
-	b.gioitinh = true;
-	b.diachi = "argentina";
-
-		
-	sinhvien c;
-	c.hoten = "Anh Si";
-	c.tuoi = 20; 
-
-	vector<sinhvien>mang;
-	mang.push_back(b);
-	mang.push_back(c);
-	for (int i = 0;i < mang.size();i++) {
-		 cout << "sinh vien" << (i + 1) << endl;
-		 cout<<""
-
-	}
+//#include<iostream>
+//#include<vector>
+//using namespace std; 
+//struct sinhvien {
+//	string hoten;
+//	int tuoi;
+//	bool gioitinh;
+//	string diachi;
+//};
+//int main() {  
+//	sinhvien b;
+//	b.hoten = "nguyen van A";
+//	b.tuoi = 19;
+//	b.gioitinh = true;
+//	b.diachi = "argentina";
+//
+//		
+//	sinhvien c;
+//	c.hoten = "Anh Si";
+//	c.tuoi = 20; 
+//
+//	vector<sinhvien>mang;
+//	mang.push_back(b);
+//	mang.push_back(c);
+//	for (int i = 0;i < mang.size();i++) {
+//		 cout << "sinh vien" << (i + 1) << endl;
+//		 cout<<""
+//
+//	}
 
 
 
@@ -57,5 +57,5 @@ int main() {
 	for (int i = 0;i < diemthi.size();i++) {
 		cout << diemthi[i] << endl;
 	}*/
-
-}
+//
+//}
