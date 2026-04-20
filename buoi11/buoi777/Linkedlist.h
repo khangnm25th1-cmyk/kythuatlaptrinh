@@ -10,6 +10,7 @@ struct LinkedList {
 	void Add(T item);
 	bool Remove(int id);
 	bool Update(int id);
+	void Find(string userName);
 };
 
 template <typename T>
@@ -79,4 +80,21 @@ bool LinkedList<T>::Update(int id) {
 		item = item->next;
 	}
 	return false;
+}
+template<typename T>
+void LinkedList<T>::Find(string userName) {
+	if (head) {
+		cout << "No account available" << endl;
+		return;
+	}
+	Node<T>* item = head;
+	while (item != NULL) {
+		if (item->data.userName == userName) {
+			cout << item->data << endl;
+			return;
+		}
+		item = item->next;
+	}
+	cout << "No account found" << endl;
+
 }

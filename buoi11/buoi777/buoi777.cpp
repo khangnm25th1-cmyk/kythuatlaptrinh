@@ -55,7 +55,13 @@ int main()
 		}
 		case 5: {
 
-			break;
+			break; 
+			string userName;
+			cout << "Emter account name:";
+			cin.ignore();
+			getline(cin, userName);
+			accounts.Find(userName);
+			break;                             
 		}
 		case 6: {
 
